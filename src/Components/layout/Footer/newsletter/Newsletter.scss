@@ -1,0 +1,278 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.newsletter {
+    position: relative;
+    top: -120px;
+    width: 50%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: $black;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px 50px 60px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__form {
+            width: 60%;
+
+            &__title {
+                font-weight: 700;
+                font-size: 32px;
+                font-family: playfair display, serif;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+
+            &__inp {
+                width: 70%;
+                height: 50px;
+                border: 1px solid #b69d74;
+                background-color: transparent;
+                padding-left: 20px;
+                color: #fff;
+                font-size: 15px;
+            }
+
+
+            &__btn {
+                background-color: $black;
+                border: transparent;
+                width: 150px;
+                height: 50px;
+                display: inline-block;
+                font-size: 16px;
+                color: $white;
+                padding: 12px 15px;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: $transition;
+                    background-color: #333333;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: $transition;
+                    background-color: #333333;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 50%;
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        width: 50%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1834px) {
+    .newsletter {
+        padding: 40px 0px 40px 60px;
+        width: 70%;
+
+        .container {
+            &__form {
+                width: 70%;
+
+                &__title {
+                    font-weight: 600;
+                    font-size: 32px;
+                }
+
+                &__inp {
+                    width: 70%;
+                    height: 50px;
+                    font-size: 15px;
+                }
+
+
+                &__btn {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 16px;
+                    padding: 12px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1596px) {
+    .newsletter {
+        padding: 30px 0px 30px 60px;
+        .container {
+            
+            &__form {
+                width: 70%;
+
+                &__title {
+                    font-weight: 600;
+                    font-size: 32px;
+                }
+
+                &__inp {
+                    width: 60%;
+                    height: 50px;
+                    font-size: 15px;
+                }
+
+
+                &__btn {
+                    width: 120px;
+                    height: 50px;
+                    font-size: 16px;
+                    padding: 12px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1296px) {
+    .newsletter {
+        height: 35%;
+    }
+}
+
+@media only screen and (max-width: 1016px) {
+    .newsletter {
+        height: 30%;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .newsletter {
+        .container {
+            &__form {
+                &__title {
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+
+                &__inp {
+                    width: 60%;
+                    height: 50px;
+                    font-size: 15px;
+                }
+
+
+                &__btn {
+                    width: 100px;
+                    height: 50px;
+                    font-size: 16px;
+                    padding: 12px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .newsletter {
+        .container {
+            &__form {
+                &__title {
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+
+                &__inp {
+                    width: 200px;
+                    height: 40px;
+                    font-size: 15px;
+                }
+
+
+                &__btn {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 16px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .newsletter {
+        .container {
+            &__form {
+
+                &__inp {
+                    width: 190px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+
+
+                &__btn {
+                    width: 90px;
+                    height: 40px;
+                    font-size: 14px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    .newsletter {
+        .container {
+            &__form {
+                &__title {
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+
+                &__inp {
+                    width: 60%;
+                    height: 40px;
+                    font-size: 10px;
+                }
+
+
+                &__btn {
+                    width: 35%;
+                    height: 40px;
+                    font-size: 10px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.language {
+    width: 65px;
+    position: relative;
+    .select{
+        width: 65px;
+        appearance: none;
+        padding: .2rem 0 .3rem .5rem;
+        border: transparent;
+        border-left: 1px solid $black-blue;
+        cursor: pointer;
+        color: $black-blue;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        border-style: solid;
+        border-width: 9px 6px 0 6px;
+        border-color: $black-blue transparent transparent transparent;
+        pointer-events: none;
+    }
+}

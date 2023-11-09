@@ -1,0 +1,169 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.nav {
+    width: 100%;
+    margin-top: -30px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item1 {
+            width: 30%;
+
+            &__img {
+                img {
+                    width: 125px;
+                    height: 60px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            &__text {
+                color: #fff;
+                font-size: 1rem;
+                margin-bottom: 35px;
+            }
+
+            &__list {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__item {
+
+                    a {
+                        font-size: 1.3rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &__item2 {
+            &__title {
+                margin-bottom: 30px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 2rem;
+                display: inline-block;
+                border-bottom: 3px solid $black;
+            }
+
+            &__list {
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &__a {
+                    &__item {
+                        list-style-type: none;
+                        display: block;
+                        margin-bottom: 20px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        color: $white;
+                        display: block;
+
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            transition: 1s all ease;
+                            letter-spacing: 1.5px;
+                            color: $black;
+                        }
+
+                        i {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__item3 {
+            width: 35%;
+
+            &__title {
+                margin-bottom: 30px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 2rem;
+                display: inline-block;
+                border-bottom: 3px solid $black;
+            }
+
+            &__list {
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                li {
+                    list-style-type: none;
+                    display: block;
+                    margin-bottom: 20px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        color: $white;
+                        display: block;
+
+                        &:hover {
+                            transition: 1s all ease;
+                            letter-spacing: 1.5px;
+                            color: $black;
+                        }
+
+                        i {
+                            margin-right: 1rem;
+                            display: inline-block;
+                            color: $black;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .nav {
+        background-color: $black;
+
+        .container {
+
+            &__item1 {
+                width: 250px;
+                margin: 20px;
+
+                &__list {
+                    width: 100%;
+                }
+            }
+
+            &__item2 {
+                width: 250px;
+                margin: 20px;
+            }
+
+            &__item3 {
+                width: 250px;
+                margin: 20px;
+            }
+        }
+    }
+
+}

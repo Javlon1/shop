@@ -1,0 +1,143 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.intro {
+    padding: 7rem 0;
+    background-color: $gray;
+
+    .container {
+        display: flex;
+        overflow: hidden;
+
+        &__a {
+            display: none;
+            align-items: center;
+            width: 90%;
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                padding: 0 1rem;
+                position: relative;
+                bottom: 100%;
+                transition: $transition;
+
+                &__stitle {
+                    font-size: 24px;
+                    color: $black-blue;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    position: relative;
+                    z-index: 2;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -24px;
+                        height: 40px;
+                        width: 40px;
+                        margin: 0 auto;
+                        background: $orange;
+                        right: auto;
+                        left: -15px;
+                        border-radius: 100%;
+                        z-index: -1;
+                    }
+                }
+
+                &__title {
+                    font-size: 60px;
+                    color: $orange;
+                    margin-bottom: 12px;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    width: 50%;
+                    font-size: 1.1rem;
+                    color: #777;
+                    letter-spacing: 0.7px;
+                    margin-bottom: 40px;
+                }
+
+                &__disc {
+                    font-size: 20px;
+                    color: $black-blue;
+                    margin-bottom: 31px;
+                    letter-spacing: 0.7px;
+                    font-weight: 700;
+                    line-height: 1;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        font-size: 26px;
+                        color: $orange;
+                        letter-spacing: 1px;
+                        margin-left: 5px;
+                    }
+                }
+
+                &__btn {
+                    width: max-content;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.6px;
+                    padding: .8rem 1.5rem;
+                    text-transform: uppercase;
+                    border-radius: 1.6rem;
+                    background-color: $blue;
+                    transition: $transition;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $orange;
+                    }
+                }
+
+            }
+        }
+
+        &__left,
+        &__right {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            background-color: $orange;
+            transition: $transition;
+            position: relative;
+            bottom: -150px;
+
+            i {
+                color: $white;
+            }
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1399px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 676px) {}
+
+.slider-act {
+    display: flex !important;
+    .container__a__content{
+        bottom: 0 !important;
+    }
+}

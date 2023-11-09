@@ -1,0 +1,148 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
+.allIntro {
+    background-color: $black;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 45vh;
+
+        h1 {
+            color: $white;
+
+            font: {
+                size: 3rem;
+                weight: 600;
+            }
+        }
+
+        span {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 160px;
+            color: $white;
+
+            a {
+                color: $white;
+                transition: $transition;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            font: {
+                size: 1.5rem;
+            }
+
+            i {
+                margin-top: .4rem;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .allIntro {
+        .container {
+            height: 30vh;
+
+            h1 {
+                font: {
+                    size: 2.5rem;
+                    weight: 600;
+                }
+            }
+
+            span {
+                width: 110px;
+
+                font: {
+                    size: 1rem;
+                }
+
+                i {
+                    margin-top: 5px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .allIntro {
+        .container {
+            height: 30vh;
+
+            h1 {
+                font: {
+                    size: 2rem;
+                    weight: 600;
+                }
+            }
+
+            span {
+                width: 110px;
+
+                font: {
+                    size: 1rem;
+                }
+
+                i {
+                    margin-top: 5px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .allIntro {
+        .container {
+            height: 30vh;
+
+            h1 {
+                text-align: center;
+
+                font: {
+                    size: 1.7rem;
+                    weight: 500;
+                }
+            }
+
+            span {
+                width: 110px;
+
+                font: {
+                    size: 1rem;
+                }
+
+                i {
+                    margin-top: 5px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

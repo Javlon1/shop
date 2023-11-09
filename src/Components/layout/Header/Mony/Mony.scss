@@ -1,0 +1,25 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.mony {
+    width: 70px;
+    position: relative;
+    .select{
+        width: 70px;
+        appearance: none;
+        padding: .2rem 0 .3rem .5rem;
+        border: transparent;
+        cursor: pointer;
+        color: $black-blue;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        border-style: solid;
+        border-width: 9px 6px 0 6px;
+        border-color: $black-blue transparent transparent transparent;
+        pointer-events: none;
+    }
+}
